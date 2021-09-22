@@ -29,3 +29,29 @@
     text-decoration: none;
     padding: 10px;
 }
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #b2e2ff;
+}
+
+.page-body {
+    display: flex;
+}
+
+.page-left-content {
+    float: left;
+}
+
+.page-right-content {
+    float: right;
+}
+
+.page-content {
+    position: relative;
+    max-width: 80%;
+    background-color: #ffffff;
+}
