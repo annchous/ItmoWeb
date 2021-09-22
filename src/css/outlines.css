@@ -111,6 +111,12 @@ main {
     justify-content: center;
 }
 
+.code-block {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+
 aside {
     width: 40%;
     padding-left: .5rem;
