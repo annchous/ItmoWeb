@@ -21,6 +21,15 @@ header {
 .menu-bar h1 {
     padding-left: 20px;
     font-family: 'Noto Sans';
+    text-decoration: none;
+}
+
+.menu-bar h1 a {
+    padding-left: 20px;
+    font-family: 'Noto Sans';
+    color: #000000;
+    text-decoration: none;
+    font-size: xx-large;
 }
 
 .menu-nav {
