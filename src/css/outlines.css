@@ -3,9 +3,17 @@ html, body {
     min-height: 100vh;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    background-color: #ffffff;
+}
+
 .menu-bar {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -29,17 +37,14 @@ html, body {
 
 .menu-list li {
     display: inline;
-    font-family: 'Noto Sans';
+    padding: 20px;
 }
 
 .menu-list a {
     color: #000000;
     text-decoration: none;
-}
-
-.menu-list a {
-    text-decoration: none;
-    padding: 10px;
+    font-family: 'Noto Sans';
+    font-size: medium;
 }
 
 main {
@@ -75,6 +80,7 @@ main {
     position: relative;
     width: 80%;
     height: 100%;
+    margin: 0 auto;
     margin-top: 20px;
     font-family: 'Noto Sans';
     background-color: #ffffff;
@@ -109,4 +115,20 @@ aside {
 
 aside > p {
     margin: .5rem;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+.footer-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-bar p, a {
+    font-family: 'Noto Sans';
+    font-size: 14px;
 }
