@@ -59,6 +59,7 @@ header {
 main {
     height: 100vh;
     background-color: #b2e2ff;
+    z-index: 1;
 }
 
 .page-body {
