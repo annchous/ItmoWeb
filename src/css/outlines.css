@@ -90,3 +90,8 @@ main {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.ascii-art {
+    display: flex;
+    justify-content: center;
+}
