@@ -12,6 +12,8 @@ html, body {
 
 .menu-bar h1 {
     padding-left: 20px;
+    font-family: 'Noto Sans';
+    font-weight: bold;
 }
 
 .menu-nav {
@@ -28,6 +30,12 @@ html, body {
 
 .menu-list li {
     display: inline;
+    font-family: 'Noto Sans';
+}
+
+.menu-list a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-list a {
@@ -51,6 +59,7 @@ main {
 
 .page-left-content p {
     padding: 10px;
+    font-family: 'Noto Sans';
 }
 
 .page-right-content {
@@ -60,6 +69,7 @@ main {
 
 .page-right-content p {
     padding: 10px;
+    font-family: 'Noto Sans';
 }
 
 .page-content {
@@ -67,12 +77,14 @@ main {
     width: 80%;
     height: 100%;
     margin-top: 20px;
+    font-family: 'Noto Sans';
     background-color: #ffffff;
 }
 
 .page-content h1 {
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: bold;
 }
 
 .page-content p {
