@@ -44,14 +44,34 @@ main {
 
 .page-left-content {
     float: left;
+    width: 10%;
+}
+
+.page-left-content p {
+    padding: 10px;
 }
 
 .page-right-content {
     float: right;
+    width: 10%;
+}
+
+.page-right-content p {
+    padding: 10px;
 }
 
 .page-content {
     position: relative;
-    max-width: 80%;
+    width: 80%;
     background-color: #ffffff;
+}
+
+.page-content h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-content p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
