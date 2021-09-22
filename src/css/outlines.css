@@ -1,0 +1,31 @@
+.menu-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-bar h1 {
+    padding-left: 20px;
+}
+
+.menu-nav {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+.menu-list ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu-list li {
+    display: inline;
+}
+
+.menu-list a {
+    text-decoration: none;
+    padding: 10px;
+}
