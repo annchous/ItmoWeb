@@ -43,18 +43,6 @@
     font-family: 'Noto Sans';
 }
 
-@media all and (max-width: 1280px) {
-    .page-left-content p {
-        margin: 0px;
-        padding: 5px;
-    }
-
-    .page-right-content p {
-        margin: 0px;
-        padding: 0px;
-    }
-}
-
 .page-content h1, .page-content h3 {
     padding-left: 20px;
     padding-right: 20px;
@@ -102,4 +90,16 @@ aside > p {
 .footer-bar p, .footer-bar a {
     font-family: 'Noto Sans';
     font-size: small;
+}
+
+@media all and (max-width: 1280px) {
+    .page-left-content p {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .page-right-content p {
+        margin: 0px;
+        padding: 0px;
+    }
 }
