@@ -9,23 +9,26 @@ body {
 }
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    top: 0;
     align-self: flex-start;
     margin-top: 0;
-    z-index: 0;
+    width: 100%;
+    z-index: 1;
     background-color: #ffffff;
 }
 
 footer {
     margin: 0;
+    z-index: 1;
     background-color: #ffffff;
 }
 
 main {
+    margin-top: 0 auto;
     flex-grow: 1;
     background-color: #b2e2ff;
-    z-index: 1;
+    z-index: 0;
 }
 
 a {
@@ -37,4 +40,23 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+tr { 
+    border-top: 1px solid #000000;
+}
+
+th, td {
+  border-right: solid 1px #000000; 
+  border-left: solid 1px #000;
+}
+
+tr:nth-of-type(even) {
+    background-color: #b2e2ff;    
 }
