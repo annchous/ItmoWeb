@@ -11,6 +11,17 @@
     <link href="./src/css/module-styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <title>Kysect Main</title>
+
+    <script>
+        var handler = function(event) {
+            var height = document.getElementsByTagName('header')[0].offsetHeight;
+            document.getElementsByTagName('main')[0].style.marginTop = `${height}px`;
+        }
+
+        window.addEventListener('DOMContentLoaded', handler, true);
+        window.addEventListener('resize', handler, true);
+    </script>
+
 </head>
 
 <body>
@@ -50,7 +61,9 @@
                         justo efficitur tortor, id auctor erat purus ut erat. Maecenas congue nulla vel ipsum aliquam
                         dignissim.
                     </p>
-                    <aside><p>Vestibulum vitae massa ut enim laoreet commodo vulputate non.</p></aside>
+                    <aside>
+                        <p>Vestibulum vitae massa ut enim laoreet commodo vulputate non.</p>
+                    </aside>
                     <p>
                         Integer hendrerit lacus sit amet convallis rutrum. Cras interdum bibendum vulputate.
                         Pellentesque molestie lobortis nisl eget tincidunt. Vivamus malesuada, orci quis semper semper,

@@ -11,6 +11,17 @@
     <link href="./css/module-styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
     <title>Kysect Test Task</title>
+
+    <script>
+        var handler = function(event) {
+            var height = document.getElementsByTagName('header')[0].offsetHeight;
+            document.getElementsByTagName('main')[0].style.marginTop = `${height}px`;
+        }
+
+        window.addEventListener('DOMContentLoaded', handler, true);
+        window.addEventListener('resize', handler, true);
+    </script>
+
 </head>
 
 <body>
