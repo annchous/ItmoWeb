@@ -10,6 +10,8 @@
     <link href="./src/css/layout-styles.css" rel="stylesheet">
     <link href="./src/css/module-styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Kysect Main</title>
 
     <script>
@@ -17,6 +19,16 @@
             var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
             var footer = document.getElementsByClassName('footer-bar')[0];
             footer.innerHTML += '<p class="footer-bar">Page load time is ' + loadTime + ' seconds</p>';
+
+            var url = window.location.href;
+            console.log("URL: " + url)
+
+            $(".menu-list a").each(function() {
+                console.log(this.href);
+                if (url == this.href) {
+                    $(this).addClass('menu-list-active');
+                }
+            });
         }
     </script>
 

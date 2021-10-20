@@ -32,6 +32,10 @@
     font-size: medium;
 }
 
+.menu-list-active {
+    text-decoration: underline;
+}
+
 .page-left-content p {
     padding: 10px;
     padding-bottom: 5px;
