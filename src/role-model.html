@@ -13,6 +13,14 @@
     <title>Kysect Roles</title>
 
     <script>
+        window.onload = function () {
+            var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+            var footer = document.getElementsByClassName('footer-bar')[0];
+            footer.innerHTML += '<p class="footer-bar">Page load time is ' + loadTime + ' seconds</p>';
+        }
+    </script>
+
+    <script>
         var handler = function(event) {
             var height = document.getElementsByTagName('header')[0].offsetHeight;
             document.getElementsByTagName('main')[0].style.marginTop = `${height}px`;
