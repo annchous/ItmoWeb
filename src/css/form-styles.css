@@ -1,0 +1,22 @@
+.join-sect-form {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.form-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 10rem;
+    border-color: gray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-submit {
+    margin-top: 10px;
+    width: 5rem;
+    border-color: black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
