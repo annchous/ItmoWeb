@@ -20,3 +20,27 @@
     background-color: white;
     color: black;
 }
+
+.prev-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 95%;
+}
+
+.prev-submit p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+.prev-submit button {
+    align-self: center;
+    height: fit-content;
+    border-color: black;
+    border-radius: 5px;
+    background-color: #b2e2ff;
+}

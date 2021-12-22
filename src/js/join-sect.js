@@ -10,6 +10,12 @@ function onFormSubmit() {
     localStorage.setItem(now.toLocaleString(), JSON.stringify(submit_info));
 }
 
+function onDeleteButtonClick(button) {
+    date = button.childNodes[0].childNodes[1].innerText;
+    localStorage.removeItem(date);
+    document.location.reload(true);
+}
+
 window.onload = function () {
     const submits = { ...localStorage };
 
@@ -20,12 +26,15 @@ window.onload = function () {
 }
 
 function generateSubmit(date, submit_info) {
-    let result =  `<p>`;
-    result += `<b>Дата: </b>${date}\t`;
+    let result =  `<div class="prev-submit">`;
+    result += `<p id="prev-submit-info">`;
+    result += `<b id="creation-date">Дата: </b><im>${date}</im>\t`;
     result += `<b>Имя: </b>${submit_info.name == "" ? "не указано" : submit_info.name}\t`;
     result += `<b>Телеграм: </b>${submit_info.tg_username == "" ? "не указано" : submit_info.tg_username}\t`;
     result += `<b>Пулл-реквест: </b>${submit_info.pr_link == "" ? "не указано" : submit_info.pr_link}\t`;
     result += `</p>`;
+    result += `<button onClick="onDeleteButtonClick(this.parentNode)">delete</button>`;
+    result += `</div>`;
 
     return result;
 }
