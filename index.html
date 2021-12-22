@@ -10,7 +10,14 @@
     <link href="./src/css/layout-styles.css" rel="stylesheet">
     <link href="./src/css/module-styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Kysect Main</title>
+
+    <script src="./src/js/page-onload.js"></script>
+    <script src="./src/js/event-listener.js"></script>
+    <script src="./src/js/join-sect.js"></script>
+
 </head>
 
 <body>
@@ -23,6 +30,7 @@
                     <li><a href="./src/projects.html">Проекты</a></li>
                     <li><a href="./src/test-task.html">Тестовое задание</a></li>
                     <li><a href="./src/role-model.html">Ролевая модель</a></li>
+                    <li><a href="./src/join-sect.html">Вступить</a></li>
                     <li><a href="">Главная</a></li>
                 </ul>
             </nav>
@@ -31,8 +39,8 @@
     <main>
         <div class="page-body">
             <div class="page-left-content">
-                <p>Сектантов: NaN</p>
-                <p>Проектов: NaN</p>
+                <p class="sect-info">Сектантов: NaN</p>
+                <p class="sect-info">Проектов: NaN</p>
             </div>
             <div class="page-content">
                 <article>
@@ -50,7 +58,9 @@
                         justo efficitur tortor, id auctor erat purus ut erat. Maecenas congue nulla vel ipsum aliquam
                         dignissim.
                     </p>
-                    <aside><p>Vestibulum vitae massa ut enim laoreet commodo vulputate non.</p></aside>
+                    <aside>
+                        <p>Vestibulum vitae massa ut enim laoreet commodo vulputate non.</p>
+                    </aside>
                     <p>
                         Integer hendrerit lacus sit amet convallis rutrum. Cras interdum bibendum vulputate.
                         Pellentesque molestie lobortis nisl eget tincidunt. Vivamus malesuada, orci quis semper semper,

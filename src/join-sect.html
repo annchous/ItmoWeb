@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="C# Programming Community">
+    <meta name="keywords" content=".NET, C#, ITMO">
+    <meta name="author" content="Annchous">
+    <link href="./css/base-styles.css" rel="stylesheet">
+    <link href="./css/layout-styles.css" rel="stylesheet">
+    <link href="./css/module-styles.css" rel="stylesheet">
+    <link href="./css/form-styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Kysect Join</title>
+
+    <script src="./js/page-onload.js"></script>
+    <script src="./js/event-listener.js"></script>
+    <script src="./js/join-sect.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-bar">
+            <img src="./images/kysect-logo.png" alt="logo" width="80px" height="80px" />
+            <h1><a href="../index.html">Kysect</a></h1>
+            <nav class="menu-nav">
+                <ul class="menu-list">
+                    <li><a href="./projects.html">Проекты</a></li>
+                    <li><a href="./test-task.html">Тестовое задание</a></li>
+                    <li><a href="./role-model.html">Ролевая модель</a></li>
+                    <li><a href="">Вступить</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-body">
+            <div class="page-left-content">
+                <p>Сектантов: NaN</p>
+                <p>Проектов: NaN</p>
+            </div>
+            <div class="page-content">
+                <article>
+                    <h1>Отправить тестовое задание на проверку</h1>
+                    <div class="join-sect-form">
+                        <form onsubmit="onFormSubmit()">
+                            <label for="name">Имя:</label><br>
+                            <input class="form-input" type="text" id="name" name="name" placeholder="Анчоус"><br>
+                            <label for="tg_username">Telegram username:</label><br>
+                            <input class="form-input"  type="text" id="tg_username" name="tg_username" placeholder="annchouss"><br>
+                            <label for="pr_link">Ссылка на pull-request:</label><br>
+                            <input class="form-input"  type="text" id="pr_link" name="pr_link" placeholder="https://github.com/..."><br>
+                            <input class="form-submit"  type="submit" value="Submit">
+                        </form>
+                    </div>
+                </article>
+                <article>
+                    <h1>Предыдущие сабмиты</h1>
+                    <div class="prev-submits">
+                    </div>
+                </article>
+            </div>
+            <div class="page-right-content">
+                <p><a href="https://github.com/kysect">Github</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bar">
+            <p>Author: <a href="https://t.me/annchouss">@annchous</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
