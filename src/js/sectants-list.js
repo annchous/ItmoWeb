@@ -30,7 +30,12 @@ window.onload = function () {
             document.getElementsByClassName('loading-gif')[0].remove();
             document.getElementsByTagName('article')[0].innerHTML += getMembersList(data);
         }, 3000))
-        .catch(error => console.error(error));
+        .catch(error => { 
+            console.error(error);
+            document.getElementsByClassName('loading-gif')[0].remove();
+            document.getElementsByTagName('article')[0].innerHTML += `<h3>Ой! Ошиб очка вышла :c Держи кота!</h3>`;
+            document.getElementsByTagName('article')[0].innerHTML += `<img src='./images/sorry-cat.png' width="320px" height="320px" />`;
+        });
 }
 
 function getMembersList(list) {
