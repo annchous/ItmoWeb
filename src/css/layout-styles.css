@@ -40,6 +40,11 @@
     background-color: #ffffff;
 }
 
+.loading-gif {
+    display: flex;
+    flex-direction: row;
+}
+
 @media all and (max-width: 1280px) {
     .page-left-content {
         order: 1;
